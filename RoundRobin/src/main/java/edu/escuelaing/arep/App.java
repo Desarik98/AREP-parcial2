@@ -19,8 +19,8 @@ public class App {
     public static void main(String[] args) {
         port(getPort());
         HashMap<String, Integer> connection = new HashMap<>();
-        String firstInstance = "http://ec2-3-85-204-24.compute-1.amazonaws.com:4567/";
-        String secondInstance = "http://ec2-54-236-251-117.compute-1.amazonaws.com:4567/";
+        String firstInstance = "http://ec2-35-175-219-216.compute-1.amazonaws.com:4567/";
+        String secondInstance = "http://ec2-3-91-71-243.compute-1.amazonaws.com:4567/";
         connection.put(firstInstance, 0);
         connection.put(secondInstance, 0);
         get("/tan", (request, response) -> {
