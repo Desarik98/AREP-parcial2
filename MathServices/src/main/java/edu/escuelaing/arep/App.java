@@ -18,7 +18,7 @@ public class App {
         });
         get("/acos", (request, response) -> {
             double value = Double.parseDouble(request.queryParams("value"));
-            MathResponse mathResponse = new MathResponse("tan", value, Math.acos(value));
+            MathResponse mathResponse = new MathResponse("acos", value, Math.acos(value));
             return gson.toJson(mathResponse);
         });
     }
